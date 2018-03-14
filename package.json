@@ -1,0 +1,25 @@
+{
+  "name": "campaigns-fb",
+  "version": "0.0.1",
+  "description": "Get campaign statistics from Facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/levonet/campaigns-fb.git"
+  },
+  "keywords": [
+    "campaigns",
+    "insights",
+    "fb",
+    "facebook"
+  ],
+  "author": "Pavlo Bashynskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levonet/campaigns-fb/issues"
+  },
+  "homepage": "https://github.com/levonet/campaigns-fb#readme"
+}
