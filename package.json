@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/levonet/campaigns-fb/issues"
   },
-  "homepage": "https://github.com/levonet/campaigns-fb#readme"
+  "homepage": "https://github.com/levonet/campaigns-fb#readme",
+  "dependencies": {
+    "facebook-nodejs-ads-sdk": "^2.11.3"
+  }
 }
