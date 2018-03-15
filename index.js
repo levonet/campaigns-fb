@@ -41,7 +41,7 @@ account.read([AdAccount.Fields.name])
     .then((account) => {
         return account.getCampaigns([Campaign.Fields.name], { limit: 10 });
     }, (err) => {
-        log.error(new Error(err), 'Error .read()');
+        log.error(err, 'Error .read()');
         process.exit(1);
     })
     .then((campaigns) => {
@@ -54,7 +54,7 @@ account.read([AdAccount.Fields.name])
 
         return account.getInsights(campaigsInsightsFields, campaignInsightsParams);
     }, (err) => {
-        log.error(new Error(err), 'Error .getCampaigns()');
+        log.error(err, 'Error .getCampaigns()');
         process.exit(1);
     })
     .then((insights) => {
@@ -82,7 +82,7 @@ account.read([AdAccount.Fields.name])
 
         return Promise.resolve(data);
     }, (err) => {
-        log.error(new Error(err), 'Error .getInsights()');
+        log.error(err, 'Error .getInsights()');
         process.exit(1);
     })
     .then((data) => {
