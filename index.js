@@ -25,7 +25,8 @@ const insightsFields = [
     'impressions',
     'spend',
     'clicks',
-    'reach'
+    'reach',
+    'account_currency'
 ];
 
 const insightsParams = {
@@ -74,7 +75,8 @@ account.read([AdAccount.Fields.name])
                 parseInt(statistic.impressions),
                 parseInt(statistic.clicks),
                 parseFloat(statistic.spend),
-                parseInt(statistic.reach)
+                parseInt(statistic.reach),
+                '\'' + statistic.account_currency + '\''
             ]);
         };
 
@@ -96,6 +98,7 @@ account.read([AdAccount.Fields.name])
             'impressions',
             'clicks',
             'cost',
-            'reach'
+            'reach',
+            'currency'
         ]);
     });
