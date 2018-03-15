@@ -80,6 +80,11 @@ account.read([AdAccount.Fields.name])
             ]);
         };
 
+        if (!data.length) {
+            log.info('Nothing to save.');
+            process.exit(255);
+        }
+
         return Promise.resolve(data);
     }, (err) => {
         log.error(err, 'Error .getInsights()');
